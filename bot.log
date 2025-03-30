@@ -1,0 +1,274 @@
+2025-03-30 15:36:24,881 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 15:36:24,937 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 15:36:25,078 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 15:36:25,120 - discord.client - INFO - logging in using static token
+2025-03-30 15:39:29,479 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 15:39:29,518 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 15:39:29,530 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 15:39:29,531 - discord.client - INFO - logging in using static token
+2025-03-30 15:44:19,688 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 15:44:19,735 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 15:44:19,739 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 15:44:19,739 - discord.client - INFO - logging in using static token
+2025-03-30 15:44:22,898 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 7324581cc80a6aca8cda0b7cf33278e0).
+2025-03-30 15:44:24,918 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 15:44:25,800 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:11:32,940 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:11:32,959 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:11:32,976 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:11:32,976 - discord.client - INFO - logging in using static token
+2025-03-30 16:11:35,789 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: c66f9d637715734e49de58adc429c007).
+2025-03-30 16:11:37,841 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:11:37,841 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:11:37,852 - discord.ext.tasks - ERROR - Unhandled exception in internal background task 'check_payments'.
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\ext\tasks\__init__.py", line 239, in _loop
+    await self.coro(*args, **kwargs)
+  File "C:\Users\User\Desktop\Shop Bot 2.0\main.py", line 138, in check_payments
+    async with db.execute(
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\context.py", line 41, in __aenter__
+    self._obj = await self._coro
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\core.py", line 183, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\core.py", line 122, in _execute
+    return await future
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\core.py", line 105, in run
+    result = function()
+sqlite3.OperationalError: no such column: payment_confirmed
+2025-03-30 16:12:54,915 - shop_bot - ERROR - Unhandled error: Command raised an exception: OperationalError: table orders has no column named confirmation_key
+2025-03-30 16:13:11,083 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<Loop._loop() done, defined at C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\ext\tasks\__init__.py:200> exception=OperationalError('no such column: payment_confirmed')>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\ext\tasks\__init__.py", line 264, in _loop
+    raise exc
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\ext\tasks\__init__.py", line 239, in _loop
+    await self.coro(*args, **kwargs)
+  File "C:\Users\User\Desktop\Shop Bot 2.0\main.py", line 138, in check_payments
+    logger.info(f'{bot.user.name} has connected to Discord!')
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\context.py", line 41, in __aenter__
+    self._obj = await self._coro
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\core.py", line 183, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\core.py", line 122, in _execute
+    return await future
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\aiosqlite\core.py", line 105, in run
+    result = function()
+sqlite3.OperationalError: no such column: payment_confirmed
+2025-03-30 16:13:21,145 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:13:21,160 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:13:21,174 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:13:21,174 - discord.client - INFO - logging in using static token
+2025-03-30 16:13:23,839 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 3d6cc9e38f4ba65f2b0b5166d8857854).
+2025-03-30 16:13:25,843 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:13:25,843 - shop_bot - INFO - Adding missing payment_confirmed column to orders table
+2025-03-30 16:13:25,862 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:13:42,659 - shop_bot - ERROR - Unhandled error: Command raised an exception: OperationalError: table orders has no column named confirmation_key
+2025-03-30 16:15:47,461 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:15:47,466 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:15:47,483 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:15:47,483 - discord.client - INFO - logging in using static token
+2025-03-30 16:15:49,721 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 19b9d4abb2eb501c8091109008f3bc96).
+2025-03-30 16:15:51,725 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:15:51,725 - shop_bot - INFO - Adding missing confirmation_key column to orders table
+2025-03-30 16:15:51,742 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:17:31,082 - shop_bot - ERROR - Unhandled error: Command raised an exception: OperationalError: no such column: i.drive_link
+2025-03-30 16:18:54,691 - shop_bot - ERROR - Unhandled error: Command raised an exception: OperationalError: table items has no column named drive_link
+2025-03-30 16:19:07,043 - shop_bot - ERROR - Unhandled error: Command raised an exception: OperationalError: table items has no column named drive_link
+2025-03-30 16:22:24,561 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:22:24,580 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:22:24,600 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:22:24,600 - discord.client - INFO - logging in using static token
+2025-03-30 16:22:27,025 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 8a3932c562cd3a98b2da8b4013da6616).
+2025-03-30 16:22:29,044 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:22:29,044 - shop_bot - INFO - Adding missing drive_link column to items table
+2025-03-30 16:22:29,062 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:32:43,173 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:32:43,205 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:32:43,205 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:32:43,205 - discord.client - INFO - logging in using static token
+2025-03-30 16:32:45,750 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: cf59f5e66444e51913306d34dab352bd).
+2025-03-30 16:32:47,781 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:32:47,781 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:34:12,034 - root - WARNING - Drive link is empty for order #4
+2025-03-30 16:34:12,034 - root - INFO - Regular approval for order #4 (no auto-delivery requested)
+2025-03-30 16:34:13,042 - root - INFO - Payment confirmation sent to user 779560772862869505 for order #4
+2025-03-30 16:38:15,430 - discord.client - ERROR - Attempting a reconnect in 0.04s
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2025-03-30 16:38:16,779 - discord.gateway - INFO - Shard ID None has successfully RESUMED session cf59f5e66444e51913306d34dab352bd.
+2025-03-30 16:38:18,012 - root - INFO - Drive link exists for order #5: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:38:18,012 - root - INFO - Auto-delivery requested for order #5
+2025-03-30 16:38:18,012 - root - INFO - Auto-delivering order #5
+2025-03-30 16:38:18,603 - root - INFO - Payment confirmation sent to user 779560772862869505 for order #5
+2025-03-30 16:43:58,733 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:43:58,761 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:43:58,761 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:43:58,761 - discord.client - INFO - logging in using static token
+2025-03-30 16:44:01,381 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 54ef300474eb2e63215dfeee18bfcb62).
+2025-03-30 16:44:03,386 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:44:03,386 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:44:15,928 - shop_bot - ERROR - Unhandled error: Command raised an exception: AttributeError: 'User' object has no attribute 'guild_permissions'
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - id: 6
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - user_id: 779560772862869505
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - item_id: 3
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - quantity: 1
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - total_price: 1.0
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - ltc_amount: 1.0
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - status: pending
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - created_at: 2025-03-30 11:15:40
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - paid_at: None
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - delivered_at: None
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - payment_confirmed: 1
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - confirmation_key: 3JN4VSKO
+2025-03-30 16:46:38,843 - root - INFO - Approve - Order 6 data - item_name: TEST
+2025-03-30 16:46:38,855 - root - INFO - Approve - Order 6 data - drive_link: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:46:38,856 - root - INFO - Approve - Order 6 data - description: 1
+2025-03-30 16:46:38,856 - root - INFO - Approve - Order 6 data - price: 1.0
+2025-03-30 16:46:38,875 - root - INFO - Approve - Direct drive_link query result: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:46:38,876 - root - INFO - Approve - Drive link from order: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:46:38,877 - root - ERROR - Error in approve_payment command: 'sqlite3.Row' object has no attribute 'get'
+2025-03-30 16:47:52,323 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:47:52,365 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:47:52,371 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:47:52,371 - discord.client - INFO - logging in using static token
+2025-03-30 16:47:54,806 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: d0fdee437e593aa0ca842989ef73e584).
+2025-03-30 16:47:56,818 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:47:56,818 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:49:26,378 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 16:49:26,403 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 16:49:26,403 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 16:49:26,403 - discord.client - INFO - logging in using static token
+2025-03-30 16:49:31,524 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 7be4d3902ee86aaace3d7f3396bcbef2).
+2025-03-30 16:49:33,542 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 16:49:33,542 - shop_bot - INFO - Database initialization complete
+2025-03-30 16:50:10,017 - discord.client - ERROR - Attempting a reconnect in 1.23s
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\client.py", line 659, in connect
+    await self.ws.poll_event()
+  File "C:\Users\User\AppData\Roaming\Python\Python310\site-packages\discord\gateway.py", line 646, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2025-03-30 16:50:12,357 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 7be4d3902ee86aaace3d7f3396bcbef2.
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - id: 7
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - user_id: 779560772862869505
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - item_id: 3
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - quantity: 1
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - total_price: 1.0
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - ltc_amount: 1.0
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - status: pending
+2025-03-30 16:51:59,975 - root - INFO - Approve - Order 7 data - created_at: 2025-03-30 11:20:39
+2025-03-30 16:51:59,990 - root - INFO - Approve - Order 7 data - paid_at: None
+2025-03-30 16:51:59,990 - root - INFO - Approve - Order 7 data - delivered_at: None
+2025-03-30 16:51:59,990 - root - INFO - Approve - Order 7 data - payment_confirmed: 1
+2025-03-30 16:51:59,990 - root - INFO - Approve - Order 7 data - confirmation_key: 2SEYAK1Q
+2025-03-30 16:51:59,990 - root - INFO - Approve - Order 7 data - item_name: TEST
+2025-03-30 16:51:59,993 - root - INFO - Approve - Order 7 data - drive_link: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:51:59,993 - root - INFO - Approve - Order 7 data - description: 1
+2025-03-30 16:52:00,000 - root - INFO - Approve - Order 7 data - price: 1.0
+2025-03-30 16:52:00,026 - root - INFO - Approve - Direct drive_link query result: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:52:00,028 - root - INFO - Approve - Drive link from order: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:52:00,628 - root - INFO - Payment confirmation sent to user 779560772862869505 for order #7
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - id: 7
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - user_id: 779560772862869505
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - item_id: 3
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - quantity: 1
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - total_price: 1.0
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - ltc_amount: 1.0
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - status: paid
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - created_at: 2025-03-30 11:20:39
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - paid_at: 2025-03-30 11:22:00
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - delivered_at: None
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - payment_confirmed: 1
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - confirmation_key: 2SEYAK1Q
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - item_name: TEST
+2025-03-30 16:52:42,339 - root - INFO - Order 7 data - drive_link: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:52:42,348 - root - INFO - Order 7 data - description: 1
+2025-03-30 16:52:42,362 - root - INFO - Direct drive_link query result: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:52:42,364 - root - INFO - Drive link from order: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:52:42,364 - root - INFO - Adding drive link to embed: https://youtube.com/shorts/JNjPOfeKKfQ?si=p7JjysCjbfYWCGIK
+2025-03-30 16:52:43,021 - root - INFO - Delivery notification sent to user 779560772862869505 for order #7
+2025-03-30 17:15:59,426 - shop_bot - INFO - Token loaded successfully. First 5 chars: MTM1M...
+2025-03-30 17:15:59,428 - shop_bot - INFO - Token length: 72
+2025-03-30 17:15:59,430 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:15:59,449 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 17:15:59,465 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 17:15:59,465 - discord.client - INFO - logging in using static token
+2025-03-30 17:16:48,547 - shop_bot - INFO - Token loaded successfully. First 5 chars: MTM1M...
+2025-03-30 17:16:48,549 - shop_bot - INFO - Token length: 72
+2025-03-30 17:16:48,550 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:16:48,567 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 17:16:48,581 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 17:16:48,582 - discord.client - INFO - logging in using static token
+2025-03-30 17:17:49,667 - shop_bot - INFO - Token loaded successfully. First 5 chars: MTM1M...
+2025-03-30 17:17:49,668 - shop_bot - INFO - Token length: 72
+2025-03-30 17:17:49,669 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:17:49,686 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 17:17:49,696 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 17:17:49,698 - discord.client - INFO - logging in using static token
+2025-03-30 17:17:51,891 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 284131ef2747cf538b0068dccb27d7cc).
+2025-03-30 17:17:53,916 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 17:17:53,977 - shop_bot - INFO - Database initialization complete
+2025-03-30 17:18:27,156 - shop_bot - INFO - Token loaded successfully. First 5 chars: MTM1M...
+2025-03-30 17:18:27,159 - shop_bot - INFO - Token length: 72
+2025-03-30 17:18:27,160 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:18:27,226 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 17:18:27,278 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 17:18:27,279 - discord.client - INFO - logging in using static token
+2025-03-30 17:18:29,446 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 22a4340f1f582d5e022e645e7a60a05f).
+2025-03-30 17:18:31,462 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 17:18:31,496 - shop_bot - INFO - Database initialization complete
+2025-03-30 17:23:24,218 - shop_bot - INFO - Token loaded successfully. First 5 chars: MTM1M...
+2025-03-30 17:23:24,225 - shop_bot - INFO - Token length: 72
+2025-03-30 17:23:24,226 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:23:24,237 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 17:23:24,249 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 17:23:24,251 - discord.client - INFO - logging in using static token
+2025-03-30 17:34:02,259 - shop_bot - INFO - Token loaded successfully. First 5 chars: MTM1M...
+2025-03-30 17:34:02,262 - shop_bot - INFO - Token length: 72
+2025-03-30 17:34:02,263 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:34:02,292 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 17:34:02,305 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 17:34:02,306 - discord.client - INFO - logging in using static token
+2025-03-30 17:35:22,235 - shop_bot - INFO - Token loaded successfully. First 5 chars: MTM1M...
+2025-03-30 17:35:22,242 - shop_bot - INFO - Token length: 72
+2025-03-30 17:35:22,243 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-03-30 17:35:22,266 - shop_bot - INFO - Loaded extension: admin_commands.py
+2025-03-30 17:35:22,281 - shop_bot - INFO - Loaded extension: user_commands.py
+2025-03-30 17:35:22,283 - shop_bot - INFO - Syncing commands with Discord...
+2025-03-30 17:35:22,284 - shop_bot - ERROR - Failed to sync commands: Client does not have an application_id set. Either the function was called before on_ready was called or application_id was not passed to the Client constructor.
+2025-03-30 17:35:22,285 - shop_bot - INFO - Registered commands:
+2025-03-30 17:35:22,286 - shop_bot - INFO - - listbans
+2025-03-30 17:35:22,286 - shop_bot - INFO - - additem
+2025-03-30 17:35:22,294 - shop_bot - INFO - - approve
+2025-03-30 17:35:22,296 - shop_bot - INFO - - addproduct
+2025-03-30 17:35:22,297 - shop_bot - INFO - - updatepayment
+2025-03-30 17:35:22,298 - shop_bot - INFO - - removeitem
+2025-03-30 17:35:22,299 - shop_bot - INFO - - shop
+2025-03-30 17:35:22,302 - shop_bot - INFO - - price
+2025-03-30 17:35:22,328 - shop_bot - INFO - - setprice
+2025-03-30 17:35:22,339 - shop_bot - INFO - - setstock
+2025-03-30 17:35:22,370 - shop_bot - INFO - - stock
+2025-03-30 17:35:22,377 - shop_bot - INFO - - editdescription
+2025-03-30 17:35:22,378 - shop_bot - INFO - - buy
+2025-03-30 17:35:22,379 - shop_bot - INFO - - restock
+2025-03-30 17:35:22,380 - shop_bot - INFO - - confirm
+2025-03-30 17:35:22,381 - shop_bot - INFO - - vieworders
+2025-03-30 17:35:22,382 - shop_bot - INFO - - orders
+2025-03-30 17:35:22,383 - shop_bot - INFO - - cancelorder
+2025-03-30 17:35:22,386 - shop_bot - INFO - - orderinfo
+2025-03-30 17:35:22,394 - shop_bot - INFO - - deliver
+2025-03-30 17:35:22,403 - shop_bot - INFO - - refund
+2025-03-30 17:35:22,411 - shop_bot - INFO - - salesreport
+2025-03-30 17:35:22,412 - shop_bot - INFO - - help
+2025-03-30 17:35:22,414 - shop_bot - INFO - - resetshop
+2025-03-30 17:35:22,415 - shop_bot - INFO - - ban
+2025-03-30 17:35:22,417 - shop_bot - INFO - - unban
+2025-03-30 17:35:22,417 - discord.client - INFO - logging in using static token
+2025-03-30 17:35:24,697 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: e83c01c463bcf9c2d2184debf8f88ce5).
+2025-03-30 17:35:26,727 - shop_bot - INFO - Lost Bot has connected to Discord!
+2025-03-30 17:35:26,770 - shop_bot - INFO - Database initialization complete
+2025-03-30 17:37:36,098 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 49.3s behind.

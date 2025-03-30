@@ -1,0 +1,43 @@
+# Environment variables
+.env
+
+# Database
+*.db
+*.db-journal
+shop_database.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+logs/
+*.log
+bot.log
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# OS specific
+.DS_Store
+Thumbs.db 

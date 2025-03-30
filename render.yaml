@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: discord-shop-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    repo: https://github.com/yourusername/your-repo-name # Replace with your repository URL
+    autoDeploy: true
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false # Mark as sensitive
+      - key: LTC_ADDRESS
+        sync: false
+      - key: ADMIN_ROLE_ID
+        sync: false
+    disk:
+      name: bot-data
+      mountPath: /data
+      sizeGB: 1 

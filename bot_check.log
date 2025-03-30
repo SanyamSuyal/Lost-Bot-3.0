@@ -1,0 +1,12 @@
+2025-03-30 17:33:14,773 - bot_check - INFO - Starting bot check...
+2025-03-30 17:33:17,813 - bot_check - INFO - Intents configuration:
+2025-03-30 17:33:17,814 - bot_check - INFO - - message_content: True
+2025-03-30 17:33:17,815 - bot_check - INFO - - members: True
+2025-03-30 17:33:17,816 - bot_check - INFO - - guilds: True
+2025-03-30 17:33:17,817 - bot_check - INFO - Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2025-03-30 17:33:17,819 - bot_check - INFO - discord.py version: 2.3.2
+2025-03-30 17:33:17,843 - bot_check - INFO - Found 2 cog files: ['admin_commands.py', 'user_commands.py']
+2025-03-30 17:33:17,867 - bot_check - INFO - File admin_commands.py has 17 commands defined
+2025-03-30 17:33:17,931 - bot_check - INFO - File user_commands.py has 9 commands defined
+2025-03-30 17:33:17,981 - bot_check - INFO - Checking main.py for command configuration
+2025-03-30 17:33:18,026 - bot_check - INFO - Bot check completed
